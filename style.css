@@ -1,0 +1,25 @@
+.back{
+  background: rgba(233, 247, 45, 0.342);
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h1, p {
+  padding-top: 0px;
+  margin-top: 5px;
+  border-radius: 7px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgba(22, 238, 184, 0.253);
+}
+
+input {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(241, 211, 40);
+  background: rgba(3, 24, 56, 0.795);
+  border-radius: 8px;
+  border-color: rgb(21, 224, 14);
+}
+span{
+  padding:10px;
+  border-color: black;
+  border-radius: 10px;  
+}
