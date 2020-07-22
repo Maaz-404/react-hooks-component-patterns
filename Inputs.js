@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Inputs(){
+export default function Inputs(props){
 
   const [name, setName] = useState("Unknown");
     const newName = event => setName(event.target.value);
@@ -29,7 +29,7 @@ export default function Inputs(){
         value={greeting}
         onChange={newGreeting}
       />
-      <span>Set new value</span>
+      <span>Change Input to see</span>
       <p>{greeting}</p>
 
       <h1>3rd input - Stateless Form (props)</h1>
@@ -39,7 +39,7 @@ export default function Inputs(){
       <input
         label='email'
         type="text"
-        value={}
+        value={props.number}
       />
 
       </div>
