@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import _ from 'lodash';
 
 const data = [
@@ -13,17 +13,16 @@ function fetchFarAwayAPI() {
 }
 
 export default function Container() {
-   const[superHeroData,setsuperHeroData] = useState([]),
-  }
-
+   const[superHeroData,setsuperHeroData] = useState([]);
+ 
   useEffect(() => {
     const data = fetchFarAwayAPI();
       setsuperHeroData: data; 
     },[]
-  )
+  );
 
     return <SuperHeroList superHeroData={setsuperHeroData} />
-
+ }
 
 const SuperHeroList = ({ superHeroData }) => {
   return (
