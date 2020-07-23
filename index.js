@@ -1,15 +1,24 @@
 import React, { Component, useState } from 'react';
 import { render } from 'react-dom';
-import Inputs from './Inputs'
-
+import Stateless from './Stateless'
+import Stateful from './Stateful'
+import Container from './Container';
 import './style.css';
 
 function App () {
 
 return(
-  
-  <Inputs number={10}/>
-  
+
+  <>
+
+  <Stateless number={10}/>
+  <span> ____________________________________________________ </span>
+  <Stateful />
+  <span> ____________________________________________________ </span>
+  <Container />
+
+  </>
+
   );
 }
 
