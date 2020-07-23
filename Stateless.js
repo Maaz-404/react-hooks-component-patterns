@@ -10,12 +10,14 @@ export default function Stateless(props){
 
       <h1> Stateless - Read Only (uses props)</h1>
 
-      <p>{props.number}</p>
-
       <input
         type="text"
         value={props.number}
       />
+
+      <p>{props.number}</p>
+
+
 
       </div>
 
