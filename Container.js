@@ -1,11 +1,63 @@
-import React ,{useState} from 'react';
+import React, { Component } from 'react';
+import React, {useState, useEffect} from "react";
+import _ from 'lodash';
 
-  const Container = () =>{
+const data = [
+  { id: 1, name: 'Spider-Man', superPower: 'cling to walls' },
+  { id: 2, name: 'Ant-man', superPower: 'shrink size at will' },
+  { id: 3, name: 'Batman', superPower: 'genius intellect' },
+];
 
-    return(
+function fetchFarAwayAPI() {
+  return data;
+}
 
-      <h1>Container</h1>
-    )
+export default function Container() {
+   const[superHeroData,setsuperHeroData] = useState([]),
   }
 
-export default Container;
+  useEffect(() => {
+    const data = fetchFarAwayAPI();
+      setsuperHeroData: data; 
+    },[]
+  )
+
+    return <SuperHeroList superHeroData={setsuperHeroData} />
+
+
+const SuperHeroList = ({ superHeroData }) => {
+  return (
+    <div className="text-center">
+      <h2 className="py-4">Super Hero List 1</h2>
+      <table className="table px-2 table-striped">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">super power</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            _(superHeroData).map(item => {
+              return (
+                <SuperHeroRow key={item.id} row={item} />
+              )
+            }).value()
+          }
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+const SuperHeroRow = ({ row }) => {
+  const { id, name, superPower } = row;
+  return (
+    <tr key={id}>
+      <td>{id}</td>
+      <td>{name}</td>
+      <td>{superPower}</td>
+    </tr>
+  );
+}
