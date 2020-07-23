@@ -1,3 +1,9 @@
+/*This Component can be used as a testing component to try out things on lie server before making final changes in other fies/components.
+It can also be used for conversion from class based components to fucntion based components OR vice versa.
+To get started quickly on comparison between these two components which It can be used for testing purposes ; Two components are placed in testing folder which server the same purpose just in different ways. One uses Class & other uses functional-hooks based syntax to achieve the same goal.
+
+*/
+
 import React, { Component } from 'react';
 import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
