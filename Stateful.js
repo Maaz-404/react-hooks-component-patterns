@@ -5,7 +5,11 @@ import React, {useState} from "react";
 
     const [greeting, setGreeting] = useState('Function Component!');
     const newGreeting = event => setGreeting(event.target.value);
+//The state stores the live representaion of input given by users thorugh  trigger events & can be used for submission
 
+//Important
+/*Different Inputs can have same or different evenr hadling & state submission functions which depends upon your requirement and overall Component architecture. */
+//This input below gives the live user given value by event triggers 
     return (
 
      <>

@@ -1,6 +1,9 @@
 import React, { Component, useState, useEffect } from 'react';
 import _ from 'lodash';
 
+
+//Sample Model - Just replace it with a middleware such as Nodejs Api request
+
 const data = [
   { id: 1, name: 'Spider-Man', superPower: 'cling to walls' },
   { id: 2, name: 'Ant-man', superPower: 'shrink size at will' },
@@ -10,6 +13,9 @@ const data = [
  function fetchFarAwayAPI() {
    return data;
  }
+
+
+//Smart/Container/Controller Components
 
 export default function SuperHeroListContainer(){
  
@@ -24,6 +30,8 @@ export default function SuperHeroListContainer(){
     return <SuperHeroList superHeroData={superHeroData} />
 }
 
+
+//Presentational/Dumb/View Components
 
 const SuperHeroList = ({ superHeroData }) => {
   return (
