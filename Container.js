@@ -28,7 +28,7 @@ export default function SuperHeroListContainer(){
 const SuperHeroList = ({ superHeroData }) => {
   return (
     <div className="text-center">
-    <h1> Container Compoenent </h1>
+    <h1> Container Component </h1>
       <h2 className="py-4">Super Hero List 1</h2>
       <table className="table px-2 table-striped">
         <thead>
