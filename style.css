@@ -3,12 +3,21 @@
   font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-h1, p {
+h1 {
   padding-top: 0px;
   margin-top: 5px;
   border-radius: 7px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: rgba(22, 238, 184, 0.253);
+}
+
+p {
+  padding-top: 3px;
+  margin-top: 3px;
+  border-radius: 7px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: rgba(155, 243, 14, 0.699);
+
 }
 
 input {
